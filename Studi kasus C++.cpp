@@ -115,7 +115,7 @@ int main() {
                             akhir=bayar;
                             }
                             cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                    cout<<"sisa saldo anda =  \n"<<(saldo-7000*jarak)<<endl;	
+		                    cout<<"sisa saldo anda =  \n"<<(saldo-akhir)<<endl;	
 						
 							cout<<"\nTunggu Pengemudi Di Lokasi Anda";
 							sleep(5);
@@ -170,7 +170,7 @@ int main() {
                             akhir=bayar+30000;
                             }
                             cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                    cout<<"sisa saldo anda =  \n"<<saldo-(30000*jarak)<<endl;	
+		                    cout<<"sisa saldo anda =  \n"<<(saldo-akhir)<<endl;	
 							cout<<"\nTunggu Pengemudi Di Lokasi Anda";
 							sleep(5);
 							goto menuutama;
@@ -195,7 +195,7 @@ int main() {
                                     akhir=bayar+15000;
                                     }
                                     cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                            cout<<"sisa saldo anda =  \n"<<saldo-(15000*jarak)<<endl;
+		                            cout<<"sisa saldo anda =  \n"<<(saldo-akhir)<<endl;
 									cout <<"\nSilahkan Tunggu Konfirmasi dari Pengemudi.";
 									cout <<"\n\nTerima Kasih.";
 									sleep(5);
@@ -221,7 +221,7 @@ int main() {
                                     akhir=bayar+15000;
                                     }
                                     cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                            cout<<"sisa saldo anda =  \n"<<saldo-(3000*jarak)<<endl;
+		                            cout<<"sisa saldo anda =  \n"<<(saldo-akhir)<<endl;
 									cout <<"\nSilahkan Tunggu Konfirmasi dari Pengemudi.";
 									cout <<"\n\nTerima Kasih.";
 									sleep(5);
@@ -283,7 +283,7 @@ int main() {
                                     akhir=bayar+25000;
                                     }
                                      cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                            cout<<"sisa saldo anda =  \n"<<saldo-(5000*jarak)-(i*25000)<<endl;
+		                            cout<<"sisa saldo anda =  \n"<<saldo-akhir<<endl;
 									cout <<"\nSilahkan Tunggu Konfirmasi dari Pengemudi.";
 									cout <<"\n\nTerima Kasih.";
 									sleep(5);
@@ -312,7 +312,7 @@ int main() {
                                     akhir=bayar+30000;
                                     }
                                     cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                            cout<<"sisa saldo anda =  \n"<<saldo-(3000*jarak)- (i*30000)<<endl;
+		                            cout<<"sisa saldo anda =  \n"<<saldo-akhir<<endl;
 									cout <<"\nSilahkan Tunggu Konfirmasi dari Pengemudi.";
 									cout <<"\n\nTerima Kasih.";
 									sleep(5);
@@ -341,7 +341,7 @@ int main() {
                                     akhir=bayar+75000;
                                     }
                                     cout<<endl<<"jadi total pembayarannya = "<<akhir<<endl;
-		                            cout<<"sisa saldo anda =  \n"<<saldo-(5000*jarak)-(i*75000)<<endl;
+		                            cout<<"sisa saldo anda =  \n"<<saldo-akhir<<endl;
 									cout <<"\nSilahkan Tunggu Konfirmasi dari Pengemudi.";
 									cout <<"\n\nTerima Kasih.";
 									sleep(5);
@@ -376,7 +376,7 @@ int main() {
 							cout<<"\nBerhasil Dihidupkan";
 							cout<<"\nMasukkan Berat Paket Anda : ";cin>>jarak;
 							
-							bayar = jarak * 5000 -(i*5000);
+							bayar = jarak * 5000 + (i*5000);
 							cout<<" bayar"<<bayar;
 							if((bayar >= 50000)){
 							diskon=bayar*0.28;
@@ -387,7 +387,7 @@ int main() {
 							
 							}
 							cout<<endl<<" jadi total pembayarannya = "<<akhir<<endl;
-							cout<<" sisa saldo anda = \n"<<(saldo-5000*jarak)-(i*5000)<<endl;						
+							cout<<" sisa saldo anda = \n"<<(saldo-akhir<<endl;						
 							cout<<"\nTunggu Pengemudi Di Lokasi Anda";
 							sleep(5);
 							goto menuutama;
@@ -427,4 +427,4 @@ int main() {
     
      
    
- }// Tutup Kurung Int Main
+ }// Tutup Kurung Int Main  
